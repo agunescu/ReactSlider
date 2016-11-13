@@ -1,4 +1,4 @@
-# ReactReduxStarter
+# React with Redux Starter
 
 ###Getting Started###
 
