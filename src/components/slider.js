@@ -15,6 +15,14 @@ export default class Slider extends Component {
         }
     }
 
+    /**
+     * loop: false - Should arrow navigation loop around
+     * selected: 0 - Slide to be selected
+     * showArrows: true - Show arrows navigation
+     * showNav: true - Show pager navigation
+     *
+     * @type {{loop: boolean, selected: number, showArrows: boolean, showNav: boolean}}
+     */
     static defaultProps = {
         loop: false,
         selected: 0,
