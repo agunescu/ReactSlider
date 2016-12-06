@@ -148,10 +148,9 @@ export default class Slider extends Component {
             transition,
         } = this.state;
 
-
         const slidesStyles = {
             width: `${ 100 * children.length }%`,
-            height: `800px`,
+            height: `100%`,
             transform: `translateX(${ -1 * index * (100 / children.length) }%)`,
         };
         const slidesClasses = transition ? 'slider-slides slider-slides--transition' : 'slider-slides';

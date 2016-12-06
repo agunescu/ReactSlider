@@ -1,3 +1,10 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 button:hover,
 button:active,
 button:focus
@@ -7,8 +14,18 @@ button:focus
     -ms-appearance:none;
 }
 
+#root,
+.slider-wrapper {
+    height: 100%;
+}
+
 .slider-wrapper .slider-slides > div {
     margin: 0 auto;
+    padding: 100px 0;
+    font-size: 100px;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
 }
 
 .slider {
@@ -23,6 +40,11 @@ button:focus
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: 100%;
+}
+
+.slider-inner {
+    height: 90%;
 }
 
 .slider-slides {

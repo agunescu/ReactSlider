@@ -7,10 +7,11 @@ const App = () => {
         <div className='slider-wrapper'>
             <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/" />
             <Slider loop={ true }>
-                <img src="austin-fireworks.jpg" />
-                <img src="taj-mahal_copy.jpg"/>
-                <img src="ibiza.jpg"/>
-                <img src="ankor-wat.jpg"/>
+                <div style={{ background: '#21BB9A' }}>Test A</div>
+                <div style={{ background: '#329ADD' }}>Test B</div>
+                <div style={{ background: '#9A5CB9' }}>Test C</div>
+                <div style={{ background: '#E64C3C' }}>Test D</div>
+                <div style={{ background: '#2D3F52' }}>Test E</div>
             </Slider>
         </div>
     )
