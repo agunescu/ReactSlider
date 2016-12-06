@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDom from 'react-dom';
 import Navigation from './navigation';
 import Arrows from './arrows';
 
@@ -8,7 +9,6 @@ export default class Slider extends Component {
 
         this.state = {
             dragStart: 0,
-            dragStartTime: new Date(),
             index: 0,
             lastIndex: 0,
             transition: false
@@ -39,20 +39,19 @@ export default class Slider extends Component {
         }
     }
 
-    getDragX(event, isTouch) {
+    static getDragX(event, isTouch) {
         return isTouch ?
             event.touches[0].pageX :
             event.pageX;
     }
 
     handleDragStart(event, isTouch) {
-        const x = this.getDragX(event, isTouch);
+        const x = this.constructor.getDragX(event, isTouch);
 
         this.setState({
             dragStart: x,
-            dragStartTime: new Date(),
             transition: false,
-            slideWidth: ReactDOM.findDOMNode(this.refs.slider).offsetWidth,
+            slideWidth: ReactDom.findDOMNode(this.refs.slider).offsetWidth,
         });
     }
 
@@ -63,7 +62,7 @@ export default class Slider extends Component {
             slideWidth,
         } = this.state;
 
-        const x = this.getDragX(event, isTouch);
+        const x = this.constructor.getDragX(event, isTouch);
         const offset = dragStart - x;
         const percentageOffset = offset / slideWidth;
         const newIndex = lastIndex + percentageOffset;
@@ -84,21 +83,12 @@ export default class Slider extends Component {
         const {
             children,
         } = this.props;
+
         const {
-            dragStartTime,
-            index,
-            lastIndex,
+            index
         } = this.state;
 
-        const timeElapsed = new Date().getTime() - dragStartTime.getTime();
-        const offset = lastIndex - index;
-        const velocity = Math.round(offset / timeElapsed * 10000);
-
         let newIndex = Math.round(index);
-
-        if (Math.abs(velocity) > 5) {
-            newIndex = velocity < 0 ? lastIndex + 1 : lastIndex - 1;
-        }
 
         if (newIndex < 0) {
             newIndex = 0;
@@ -153,6 +143,7 @@ export default class Slider extends Component {
 
         const slidesStyles = {
             width: `${ 100 * children.length }%`,
+            height: `800px`,
             transform: `translateX(${ -1 * index * (100 / children.length) }%)`,
         };
         const slidesClasses = transition ? 'slider-slides slider-slides--transition' : 'slider-slides';
