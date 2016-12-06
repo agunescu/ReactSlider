@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navigation = ({children, lastIndex, onNavClick}) => {
     const nav = children.map((slide, i) => {
-        const buttonClasses = i === lastIndex ? 'Slider-navButton Slider-navButton--active' : 'Slider-navButton';
+        const buttonClasses = i === lastIndex ? 'slider-navButton slider-navButton--active' : 'slider-navButton';
         return (
             <button
                 className={ buttonClasses }
@@ -12,7 +12,7 @@ const Navigation = ({children, lastIndex, onNavClick}) => {
     });
 
     return (
-        <div className='Slider-nav'>{ nav }</div>
+        <div className='slider-nav'>{ nav }</div>
     );
 };
 

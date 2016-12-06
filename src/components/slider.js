@@ -155,15 +155,15 @@ export default class Slider extends Component {
             width: `${ 100 * children.length }%`,
             transform: `translateX(${ -1 * index * (100 / children.length) }%)`,
         };
-        const slidesClasses = transition ? 'Slider-slides Slider-slides--transition' : 'Slider-slides';
+        const slidesClasses = transition ? 'slider-slides slider-slides--transition' : 'slider-slides';
 
         return (
-            <div className='Slider' ref='slider'>
+            <div className='slider' ref='slider'>
                 { showArrows ? <Arrows {...this.props} lastIndex={this.state.lastIndex} onArrowsClick={this.goToSlide}/> : null }
                 { showNav ? <Navigation {...this.props} lastIndex={this.state.lastIndex} onNavClick={this.goToSlide}/> : null }
 
                 <div
-                    className='Slider-inner'
+                    className='slider-inner'
                     onTouchStart={ (event) => this.handleDragStart(event, true) }
                     onTouchMove={ (event) => this.handleDragMove(event, true) }
                     onTouchEnd={ () => this.handleDragEnd(true) }>

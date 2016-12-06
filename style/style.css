@@ -10,7 +10,7 @@ button:focus
 .slider-wrapper .Slider-slides > div {
     margin: 0 auto;
 }
-.Slider {
+.slider {
     overflow: hidden;
     position: relative;
     display: -webkit-box;
@@ -24,22 +24,22 @@ button:focus
     flex-direction: column;
 }
 
-.Slider-slides {
+.slider-slides {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
 
-.Slider-slides--transition {
+.slider-slides--transition {
     -webkit-transition: -webkit-transform 0.25s;
     transition: -webkit-transform 0.25s;
     transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-.Slider img { width: 20%; float: left; }
+.slider img { width: 20%; float: left; }
 
-.Slider-slides > * {
+.slider-slides > * {
     -webkit-flex-basis: 0;
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -49,7 +49,7 @@ button:focus
     flex-grow: 1;
 }
 
-.Slider-nav {
+.slider-nav {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
@@ -68,7 +68,7 @@ button:focus
     order: 2;
 }
 
-.Slider-navButton {
+.slider-navButton {
     background: none;
     border: 0;
     height: 20px;
@@ -81,7 +81,7 @@ button:focus
     padding: 0;
 }
 
-.Slider-navButton::after {
+.slider-navButton::after {
     background: #345;
     border-radius: 50%;
     content: '';
@@ -93,11 +93,11 @@ button:focus
     width: 6px;
 }
 
-.Slider-navButton--active {
+.slider-navButton--active {
     opacity: 1;
 }
 
-.Slider-navButton--active::after {
+.slider-navButton--active::after {
     height: 12px;
     left: 4px;
     opacity: 1;
@@ -105,7 +105,7 @@ button:focus
     width: 12px;
 }
 
-.Slider-arrows {
+.slider-arrows {
     height: 0;
     left: 0;
     position: absolute;
@@ -114,11 +114,11 @@ button:focus
     z-index: 1;
 }
 
-.Slider-arrows--noNav {
+.slider-arrows--noNav {
     top: calc(50% - 20px);
 }
 
-.Slider-arrow {
+.slider-arrow {
     background: none;
     border: none;
     height: 40px;
@@ -131,11 +131,11 @@ button:focus
     width: 21px;
 }
 
-.Slider-arrow:hover {
+.slider-arrow:hover {
     opacity: 1;
 }
 
-.Slider-arrow::after, .Slider-arrow::before {
+.slider-arrow::after, .slider-arrow::before {
     background: #fff;
     border-radius: 3px;
     content: '';
@@ -146,40 +146,40 @@ button:focus
     left: 8px;
 }
 
-.Slider-arrow::before {
+.slider-arrow::before {
     top: 0;
 }
 
-.Slider-arrow::after {
+.slider-arrow::after {
     bottom: 0;
 }
 
-.Slider-arrow--left {
+.slider-arrow--left {
     top: 0;
     left: 10px;
 }
 
-.Slider-arrow--left::before {
+.slider-arrow--left::before {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
 }
 
-.Slider-arrow--left::after {
+.slider-arrow--left::after {
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
 }
 
-.Slider-arrow--right {
+.slider-arrow--right {
     top: 0;
     right: 10px;
 }
 
-.Slider-arrow--right::before {
+.slider-arrow--right::before {
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
 }
 
-.Slider-arrow--right::after {
+.slider-arrow--right::after {
     -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
 }
