@@ -1,15 +1,17 @@
-# React with Redux Starter
+# React Slider
+Simple react slider component with touch interaction, adaptive heights, pager and 0 dependencies.
 
 ###Getting Started###
 
 Getting started with this repo.
 
 ####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Simple react slider component with touch support and 0 dependencies.
+
 
 ```
-	> git clone git@github.com:agunescu/ReactStarter.git
-	> cd ReactStarter
+	> git clone git@github.com:agunescu/ReactSlider.git
+	> cd ReactSlider
 	> npm install
 	> npm start
 ```
