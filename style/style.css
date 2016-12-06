@@ -7,9 +7,10 @@ button:focus
     -ms-appearance:none;
 }
 
-.slider-wrapper .Slider-slides > div {
+.slider-wrapper .slider-slides > div {
     margin: 0 auto;
 }
+
 .slider {
     overflow: hidden;
     position: relative;
@@ -37,7 +38,10 @@ button:focus
     transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-.slider img { width: 20%; float: left; }
+.slider img {
+    width: 20%;
+    float: left;
+}
 
 .slider-slides > * {
     -webkit-flex-basis: 0;
