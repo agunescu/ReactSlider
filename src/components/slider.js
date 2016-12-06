@@ -30,6 +30,11 @@ export default class Slider extends Component {
         showNav: true
     };
 
+    updateDimensions = () => {
+        let dimensions = this.constructor.calculateAspectRatioFit(window.innerWidth, window.innerHeight, 1680, 1050);
+        this.setState({width: dimensions.width, height: dimensions.height});
+    };
+
     componentWillMount() {
         const { selected } = this.props;
 
@@ -37,6 +42,16 @@ export default class Slider extends Component {
             index: selected,
             lastIndex: selected,
         });
+
+        this.updateDimensions();
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.updateDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateDimensions);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -45,6 +60,12 @@ export default class Slider extends Component {
         if (selected !== nextProps.selected) {
             this.goToSlide(nextProps.selected);
         }
+    }
+
+    static calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
+        let ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
+
+        return { width: srcWidth*ratio, height: srcHeight*ratio };
     }
 
     static getDragX(event, isTouch) {
@@ -155,6 +176,11 @@ export default class Slider extends Component {
         };
         const slidesClasses = transition ? 'slider-slides slider-slides--transition' : 'slider-slides';
 
+        const childrenWithProps = React.Children.map(this.props.children, function(child) {
+            let height = this.state.height;
+            return React.cloneElement(child, {style: {height: height + 'px'}})
+        }, this);
+
         return (
             <div className='slider' ref='slider'>
                 { showArrows ? <Arrows {...this.props} lastIndex={this.state.lastIndex} onArrowsClick={this.goToSlide}/> : null }
@@ -168,7 +194,7 @@ export default class Slider extends Component {
                     <div
                         className={ slidesClasses }
                         style={ slidesStyles }>
-                        { children }
+                        {childrenWithProps}
                     </div>
                 </div>
             </div>
