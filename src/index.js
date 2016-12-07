@@ -5,7 +5,6 @@ import Slider from './components/slider';
 const App = () => {
     return (
         <div className='slider-wrapper'>
-            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/" />
             <Slider loop={ true }>
                 <div style={{ background: '#21BB9A' }}>Test A</div>
                 <div style={{ background: '#329ADD' }}>Test B</div>
