@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Slider from './components/slider';
+import Image from './components/image';
 
 const App = () => {
     return (
         <div className='slider-wrapper'>
             <Slider loop={ true }>
-                <div style={{ background: '#21BB9A' }}>Test A</div>
-                <div style={{ background: '#329ADD' }}>Test B</div>
-                <div style={{ background: '#9A5CB9' }}>Test C</div>
-                <div style={{ background: '#E64C3C' }}>Test D</div>
-                <div style={{ background: '#2D3F52' }}>Test E</div>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" />
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/taj-mahal_copy.jpg"/>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ibiza.jpg"/>
+                <Image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ankor-wat.jpg"/>
             </Slider>
         </div>
     )
