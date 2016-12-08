@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import Navigation from './navigation';
 import Arrows from './arrows';
+const ARROWLEFT = 37;
+const ARROWRIGHT = 39;
 
 export default class Slider extends Component {
     constructor(props) {
@@ -37,6 +39,14 @@ export default class Slider extends Component {
             index: selected,
             lastIndex: selected,
         });
+    }
+
+    componentDidMount() {
+        window.addEventListener("keydown", this.handleKeyPress);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("keydown", this.handleKeyPress);
     }
 
     componentWillReceiveProps(nextProps) {
@@ -111,6 +121,21 @@ export default class Slider extends Component {
             transition: true,
         });
     }
+
+    /**
+     * ArrowRight: keycode = 37
+     * ArrowLeft: keycode = 39
+     */
+    handleKeyPress  = (e) => {
+        const { lastIndex } = this.state,
+                code = e.keyCode;
+
+        if (code === ARROWLEFT) {
+            this.goToSlide(lastIndex - 1);
+        } else if (code === ARROWRIGHT) {
+            this.goToSlide(lastIndex + 1);
+        }
+    };
 
     goToSlide = (index, event) => {
         const {
