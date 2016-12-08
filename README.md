@@ -1,5 +1,5 @@
 # React Slider
-Simple react slider component with touch interaction, adaptive heights, pager, lazy loading and 0 dependencies.
+Simple react slider component with touch interaction, adaptive heights, pager, lazy loading, keyboard navigation and 0 dependencies.
 
 ###Getting Started###
 
@@ -15,3 +15,5 @@ Simple react slider component with touch support and 0 dependencies.
 	> npm install
 	> npm start
 ```
+
+![alt tag](https://github.com/agunescu/ReactSlider/blob/master/mockup.png)
