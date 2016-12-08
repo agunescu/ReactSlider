@@ -1,5 +1,5 @@
 # React Slider
-Simple react slider component with touch interaction, adaptive heights, pager and 0 dependencies.
+Simple react slider component with touch interaction, adaptive heights, pager, lazy loading and 0 dependencies.
 
 ###Getting Started###
 

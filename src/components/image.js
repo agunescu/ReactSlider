@@ -11,7 +11,7 @@ export default class Image extends Component {
 
     render() {
         let style = this.props.style || {};
-        //style.transition = `opacity ${this.props.speed || 1}s`;
+        style.transition = `opacity ${this.props.speed || 1}s`;
         style.opacity = this.state.opacity;
 
         return (
