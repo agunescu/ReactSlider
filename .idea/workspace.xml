@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50927fd7-aec6-4800-a597-ede92d49da8f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/image.js" afterPath="$PROJECT_DIR$/src/components/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/slider.js" afterPath="$PROJECT_DIR$/src/components/slider.js" />
     </list>
     <ignored path="react starter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,31 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="mockup.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mockup.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrows.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/arrows.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="247">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="image.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/image.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="923">
-              <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="52">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -58,51 +57,21 @@
       <file leaf-file-name="slider.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/slider.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="585">
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <marker date="1481190750000" expanded="true" signature="4516:5299" ph="..." />
-                <marker date="1481190750000" expanded="true" signature="4637:5293" ph="..." />
-                <marker date="1481190750000" expanded="true" signature="4765:5293" ph="..." />
-                <marker date="1481190750000" expanded="true" signature="4798:5280" ph="..." />
-                <marker date="1481190750000" expanded="true" signature="5097:5257" ph="..." />
+                <element signature="e#0#53#0" expanded="true" />
+                <marker date="1481192905000" expanded="true" signature="4083:4866" ph="..." />
+                <marker date="1481192905000" expanded="true" signature="4204:4860" ph="..." />
+                <marker date="1481192905000" expanded="true" signature="4332:4860" ph="..." />
+                <marker date="1481192905000" expanded="true" signature="4365:4847" ph="..." />
+                <marker date="1481192905000" expanded="true" signature="4664:4824" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/navigation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrows.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/arrows.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -114,22 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/image.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dragstart</find>
-      <find>pager</find>
       <find>loop</find>
       <find>transition</find>
       <find>inner</find>
@@ -158,6 +115,8 @@
       <find>gotoslide</find>
       <find>lastIndex</find>
       <find>lastSelected</find>
+      <find>defaultProps</find>
+      <find>propType</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,10 +137,10 @@
         <option value="$PROJECT_DIR$/src/components/arrows.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/style.css" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/image.js" />
-        <option value="$PROJECT_DIR$/src/components/slider.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/components/image.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/slider.js" />
       </list>
     </option>
   </component>
@@ -378,7 +337,7 @@
       <workItem from="1479032130712" duration="252000" />
       <workItem from="1480971557188" duration="19000" />
       <workItem from="1480971664671" duration="43330000" />
-      <workItem from="1481117877788" duration="6064000" />
+      <workItem from="1481117877788" duration="7286000" />
     </task>
     <task id="LOCAL-00001" summary="Removed base tag.">
       <created>1481114516530</created>
@@ -391,7 +350,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50683000" />
+    <option name="totallyTimeSpent" value="51905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -470,12 +429,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1481190750000" expanded="true" signature="4516:5299" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="4637:5293" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="4765:5293" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="4798:5280" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="5097:5257" ph="..." />
+            <element signature="e#0#53#0" expanded="true" />
+            <marker date="1481192905000" expanded="true" signature="4083:4866" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4204:4860" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4332:4860" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4365:4847" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4664:4824" ph="..." />
           </folding>
         </state>
       </provider>
@@ -592,6 +551,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/arrows.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+            <marker date="1481192905000" expanded="true" signature="4083:4866" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4204:4860" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4332:4860" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4365:4847" ph="..." />
+            <marker date="1481192905000" expanded="true" signature="4664:4824" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -599,45 +602,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/arrows.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/slider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1481190750000" expanded="true" signature="4516:5299" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="4637:5293" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="4765:5293" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="4798:5280" ph="..." />
-            <marker date="1481190750000" expanded="true" signature="5097:5257" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>

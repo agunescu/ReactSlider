@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes  } from 'react';
 import ReactDom from 'react-dom';
 import Navigation from './navigation';
 import Arrows from './arrows';
 const ARROWLEFT = 37;
 const ARROWRIGHT = 39;
 
-export default class Slider extends Component {
+class Slider extends Component {
     constructor(props) {
         super(props);
 
@@ -16,21 +16,6 @@ export default class Slider extends Component {
             transition: false
         }
     }
-
-    /**
-     * loop: false - Should arrow navigation loop around
-     * selected: 0 - Slide to be selected
-     * showArrows: true - Show arrows navigation
-     * showNav: true - Show pager navigation
-     *
-     * @type {{loop: boolean, selected: number, showArrows: boolean, showNav: boolean}}
-     */
-    static defaultProps = {
-        loop: false,
-        selected: 0,
-        showArrows: true,
-        showNav: true
-    };
 
     componentWillMount() {
         const { selected } = this.props;
@@ -200,3 +185,27 @@ export default class Slider extends Component {
         );
     }
 }
+
+Slider.propTypes = {
+    loop: PropTypes.bool,
+    selected: PropTypes.number,
+    showArrows: PropTypes.bool,
+    showNav: PropTypes.bool
+};
+
+/**
+ * loop: false - Should arrow navigation loop around
+ * selected: 0 - Slide to be selected
+ * showArrows: true - Show arrows navigation
+ * showNav: true - Show pager navigation
+ *
+ * @type {{loop: boolean, selected: number, showArrows: boolean, showNav: boolean}}
+ */
+Slider.defaultProps = {
+    loop: false,
+    selected: 0,
+    showArrows: true,
+    showNav: true
+};
+
+export default Slider;

@@ -4,7 +4,9 @@ export default class Image extends Component {
     constructor({ src }) {
         super();
         let opacity = 0;
-        if(!src.match(/http/) || typeof window === 'undefined') opacity = 1;
+        if (!src.match(/http/) || typeof window === 'undefined') {
+            opacity = 1;
+        }
 
         this.state = { opacity };
     }
